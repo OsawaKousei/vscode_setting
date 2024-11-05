@@ -10,17 +10,21 @@
         "--skip-string-normalization"
     ],
     "isort.args": ["--profile", "black"],
-    "mypy-type-checker.args": [
-        "--warn-return-any",
-        "--no-implicit-optional",
-        "--disallow-untyped-calls",
-        "--disallow-untyped-defs\t",
-        "--ignore-missing-imports",
-        "--follow-imports=skip"
-    ],
     "flake8.severity": {
         "E": "Warning",
         "F": "Warning",
         "I": "Warning"
+    },
+    "mypy-type-checker.args": [
+        "--warn-return-any",
+        "--no-implicit-optional",
+        "--disallow-untyped-calls",
+        "--disallow-untyped-defs",
+        "--ignore-missing-imports",
+        "--follow-imports=skip"
+    ],
+    "mypy-type-checker.severity": {
+        "error": "Information",
+        "note": "Information"
     }
 }
