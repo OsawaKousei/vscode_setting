@@ -3,6 +3,13 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["typescript"],
+  "tailwindCSS.includeLanguages": {
+    "css": "css"
+  },
+  "tailwindCSS.experimental.classRegex": [["@apply\\s+([^;]+);", 1]],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "eslint.codeActionsOnSave.rules": null,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
