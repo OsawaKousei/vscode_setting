@@ -1,21 +1,30 @@
 {
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        },
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.formatOnSave": true
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "always",
+      "source.organizeImports.ruff": "always"
     },
-    "mypy-type-checker.args": [
-        "--warn-return-any",
-        "--no-implicit-optional",
-        "--disallow-untyped-calls",
-        "--disallow-untyped-defs",
-        "--ignore-missing-imports",
-        "--follow-imports=skip"
-    ],
-    "mypy-type-checker.severity": {
-        "error": "Information",
-        "note": "Information"
-    }
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.tabSize": 2
+  },
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.languageServer": "None",
+  "ruff.configuration": {
+    "format": {
+      "indent-style": "space"
+    },
+    "indent-width": 2
+  },
+  "ruff.enable": true,
+  "ruff.importStrategy": "fromEnvironment",
+  "ruff.lint.enable": true,
+  "ty.diagnosticMode": "openFilesOnly",
+  "ty.disableLanguageServices": false,
+  "ty.importStrategy": "fromEnvironment"
 }
